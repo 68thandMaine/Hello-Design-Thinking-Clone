@@ -1,4 +1,18 @@
-img {
-  width: 82rem;
+* {
+  margin:0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#bg {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 82rem;
 }

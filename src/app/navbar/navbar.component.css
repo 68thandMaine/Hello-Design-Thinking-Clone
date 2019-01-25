@@ -9,6 +9,21 @@
 }
 
 .navBarImg {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 10%;
+}
+
+.navLinks {
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+#shorterLogo{
+  width: 45%;
+  float: left;
+  margin-left: 50%;
+}
+#longerLogo {
+  width: 70%;
 }
