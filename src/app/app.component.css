@@ -1,4 +1,36 @@
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../assets/fonts/Gotham-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .background {
   position: absolute;
   z-index: auto;
+}
+
+.mainContainer {
+position: absolute;
+left: auto;
+top: 150px;
+right: 0px;
+bottom: auto;
+width: 70%;
+clear: both;
+background-image: none;
+}
+
+.subHeader {
+margin-bottom: 10px;
+font-family: Gotham-Bold, Tahoma, sans-serif;
+color: #313132;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
 }
