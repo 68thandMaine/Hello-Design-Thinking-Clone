@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('friday-proj App', () => {
+describe('Hello-Design-Thinking-Clone App', () => {
   let page: AppPage;
 
   beforeEach(() => {
