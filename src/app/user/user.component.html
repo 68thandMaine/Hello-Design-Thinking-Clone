@@ -2,7 +2,7 @@
 
 
 <!-- login form -->
-<div class="login_form">
+<div class="loginform">
   <div class="login_header">
     <div class="login_spacers">
       <h3>Hello Design Thinking</ h3>
@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="form">
-    <form class="login_form" action="index.html" method="post">
+    <form class="loginForm" action="index.html" method="post">
       <input class="loginFormInput" type="email" name="login_email" value="" placeholder="Email" id="login_email">
       <input class="login_form" type="text" name="loginFormPword" value="" placeholder="Password" id="loginFormPword">
       <p id="forgotPWord"><a href="#" id="forgotPWord">Forgot password?</a></p>
@@ -27,55 +27,34 @@
 </div>
 
 <!-- register form -->
-
-
-
-
-
-
-<div class="user-functions">
-  <!-- what do I pass into the click directive? -->
-  <button class="btn btn-light" type="button" name="button" (click)="registerButtonClicked()">Register</button>
-  <button class="btn btn-dark" type="button" name="button" (click)="loginButtonClicked()">Login</button>
-
-  <div class="register_form">
-    <div class="subHeaderRegister-1">
-      <p>Get started with Hello Design Thinking!</p>
-      <div class="subHeaderRegister-2">
-        <p>Already have an account?</p>
-        <a href="#">Log in here</a>
-        <div class="miniForm">
-          <form class="registration-form" action="index.html" method="post">
-            <div class="row">
-              <div class="col-lg-6">
-                <input id="firstName" type="text" name="firstName" value="" placeholder="First Name*">
-              </div>
-              <div class="col-lg-6">
-                <input id="lastName" type="text" name="lastName" value="" placeholder="Last Name*">
-              </div>
-          </div>
-            <input id="companyName" type="text" name="companyName" value="" placeholder="Company Name*">
-            <input id="jobTitle" type="text" name="jobTitle" value="" placeholder="Job Title*">
-            <input id="email" type="email" name="email" value="" placeholder="Email*">
-            <input id="password" type="password" name="password" value="" placeholder="Password*">
-            <input id="confirmPassword" type="password" name="confirmPassword" value="" placeholder="Confirm Password*">
-            <div>
-              <label for="newsLetterOptIn">
-                <input type="checkbox" name="newsLetterOptIn" value="">&nbsp; I'd like to recieve communications from IDEO U about offers, news and opportunities.
-              </label>
-              <div class="formErrors" ng-show></div>
-              <div>
-                <input class='btn btn-dark' type="submit" name="submit-registration" value="">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+<div class="register_form">
+  <div class="login_spacers">
+    <h3>Get started with Hello Design Thinking!</h3>
+  </div>
+    <div class="login_spacers">
+      <h4>Already have an account?<a href="#" class="links">Log in here</a></h4>
     </div>
-  </div>
-
-
-  <div class="login">
-
-  </div>
+      <div class="form">
+        <form class="registration_form" action="index.html" method="">
+          <div class="row">
+            <div class="col-lg-6">
+              <input id="firstName" type="text" name="firstName" value="" placeholder="First Name*">
+            </div>
+            <div class="col-lg-6">
+              <input id="lastName" type="text" name="lastName" value="" placeholder="Last Name*">
+            </div>
+          </div>
+          <input id="companyName" type="text" name="companyName" value="" placeholder="Company Name*">
+          <input id="jobTitle" type="text" name="jobTitle" value="" placeholder="Job Title*">
+          <input id="email" type="email" name="email" value="" placeholder="Email*">
+          <input id="password" type="password" name="password" value="" placeholder="Password*">
+          <input id="confirmPassword" type="password" name="confirmPassword" value="" placeholder="Confirm Password*">
+          <div>
+            <label for="newsLetterOptIn">
+              <input type="checkbox" name="newsLetterOptIn" value="">&nbsp; I'd like to recieve communications from IDEO U about offers, news and opportunities.
+            </label>
+              <input class='btn btn-dark' type="submit" name="submit-registration" value="">
+            </div>
+        </form>
+      </div>
 </div>
