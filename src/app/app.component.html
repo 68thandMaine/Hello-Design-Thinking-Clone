@@ -5,14 +5,14 @@
 </div>
 
 <div class="mainContainer">
-  <div class="subHeader">
-    Welcome To
-    <img src="https://uploads-ssl.webflow.com/58b75054e291b63e37f4d817/595fd79970308b56731eeec6_Hello-DT_logo.svg" alt="">
-    <app-register></app-register>
-  </div>
+  <div class="user-functions">
+      <!-- what do I pass into the click directive? -->
+      <button class="btn btn-light" type="button" name="button" (click)="registerButtonClicked()">Register</button>
+      <button class="btn btn-dark" type="button" name="button" (click)="loginButtonClicked()">Login</button>
+</div>
+  <app-user></app-user>
 </div>
 
 <div class="container">
   <app-navbar></app-navbar>
-
 </div>
