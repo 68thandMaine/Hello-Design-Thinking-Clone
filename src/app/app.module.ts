@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
-import { RegisterComponent } from './register/register.component';
+import { userComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -13,7 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     BackgroundComponent,
-    RegisterComponent,
+    userComponent,
     LoginComponent,
     NavbarComponent
   ],
