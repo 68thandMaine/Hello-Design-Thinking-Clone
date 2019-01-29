@@ -8,7 +8,13 @@ import { User } from './models/user.model';
 })
 export class AppComponent {
   title = 'Hello Design Thinking Clone';
-  masterUserList: User[] = [ ];
+  masterUserList: User[] = [
+    new User("Chris", "Rudnicky", "Epicodus","Student", "chrisrudnicky@gmail.com", "password123", "password123"),
+    new User("Shaina", "Morales", "Pep Co","Screen Printer", "smo@pepco.com", "password123", "password123")
+   ];
+
+
+
 
 
 addUser(newUser: User) {

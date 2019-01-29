@@ -9,22 +9,22 @@
         <form class="registration_form" action="index.html" method="">
           <div class="row">
             <div class="col-lg-6">
-              <input id="firstName" type="text" name="firstName" value="" placeholder="First Name*">
+              <input #firstName id="firstName" type="text" name="firstName" value="" placeholder="First Name*">
             </div>
             <div class="col-lg-6">
-              <input id="lastName" type="text" name="lastName" value="" placeholder="Last Name*">
+              <input #lastName id="lastName" type="text" name="lastName" value="" placeholder="Last Name*">
             </div>
           </div>
-          <input id="companyName" type="text" name="companyName" value="" placeholder="Company Name*">
-          <input id="jobTitle" type="text" name="jobTitle" value="" placeholder="Job Title*">
-          <input id="email" type="email" name="email" value="" placeholder="Email*">
-          <input id="password" type="password" name="password" value="" placeholder="Password*">
-          <input id="confirmPassword" type="password" name="confirmPassword" value="" placeholder="Confirm Password*">
+          <input #companyName id="companyName" type="text" name="companyName" value="" placeholder="Company Name*">
+          <input  #jobTitle id="jobTitle" type="text" name="jobTitle" value="" placeholder="Job Title*">
+          <input  #email id="email" type="email" name="email" value="" placeholder="Email*">
+          <input #password id="password" type="password" name="password" value="" placeholder="Password*">
+          <input #confirmPassword id="confirmPassword" type="password" name="confirmPassword" value="" placeholder="Confirm Password*">
           <div>
-            <label for="newsLetterOptIn">
+            <label #newsLetterOptIn for="newsLetterOptIn">
               <input type="checkbox" name="newsLetterOptIn" value="">&nbsp; I'd like to recieve communications from IDEO U about offers, news and opportunities.
             </label>
-              <input (click)="submitRegistration()" class='btn btn-dark' type="submit" name="submit-registration" value="">
+              <input (click)="submitRegistration(firstName.value, lastName.value, companyName.value, jobTitle.value, email.value, password.value, confirmPassword.value, newsLetterOptIn.value)" class='btn btn-dark' type="submit" name="submit-registration" value="">
             </div>
         </form>
       </div>
