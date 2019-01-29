@@ -9,7 +9,8 @@
       <button class="btn btn-light" type="button" name="button" (click)="registerButtonClicked()">Register</button>
       <button class="btn btn-dark" type="button" name="button" (click)="loginButtonClicked()">Login</button>
 </div>
-  <app-user></app-user>
+  <app-register (newUser)="addUser($event)"></app-register>
+  <app-login></app-login
 </div>
 
 <div class="container">

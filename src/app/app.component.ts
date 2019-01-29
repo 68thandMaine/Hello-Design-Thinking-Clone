@@ -8,6 +8,10 @@ import { User } from './models/user.model';
 })
 export class AppComponent {
   title = 'Hello Design Thinking Clone';
-
   masterUserList: User[] = [ ];
+
+
+addUser(newUser: User) {
+  this.masterUserList.push(newUser);
+}
 }
