@@ -1,0 +1,47 @@
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Sentinel book', Georgia, sans-serif;
+}
+
+/* This whill create a box that if fixed to the body element and sits above it the register header must match the z-index and the width, but the height will be different */
+
+.login_header {
+
+}
+/* Used to provide width betwewn divs */
+.login_spacers {
+  margin-bottom:30px;
+}
+.links {
+  color: red;
+}
+.form {
+
+}
+
+/*  Login Form */
+.login_form {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2000;
+  width: 700px;
+  height: auto;
+  max-width: 100%;
+  margin:  100px;
+  padding: 40px;
+  }
+
+.loginFormInput {
+  margin-bottom: 24px;
+}
+#forgotPWord {
+  color: red;
+}
+#login_button {
+  font-weight: bold;
+}
+
+.legalities {
+
+}
