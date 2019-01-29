@@ -10,7 +10,7 @@
       <button class="btn btn-dark" type="button" name="button" (click)="loginButtonClicked()">Login</button>
 </div>
   <app-register (sendNewUser)="addUser($event)"></app-register>
-  <app-login></app-login
+  <app-login [childUserList]="currentUser" (clickedDone)="finishedEditing()"></app-login>
 </div>
 
 <div class="container">

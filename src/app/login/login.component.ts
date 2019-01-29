@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { User } from '../models/user.model';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+@Input(): childSelectedUser: User;
+@Output(): clickedLogin: new EventEmitter;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+login(){
+  this.clickedLogin.emit();
+}
 
 }
