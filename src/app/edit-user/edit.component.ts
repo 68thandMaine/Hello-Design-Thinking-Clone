@@ -6,11 +6,12 @@ import { User } from '../models/user.model';
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.css']
 })
-export class EditComponent implements OnInit {
+export class EditComponent  {
+@Input()childSelectedUser: User;
+@Output() clickedDone = new EventEmitter;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+finishedEditing() {
+  this.clickedDone.emit();
+}
 
 }

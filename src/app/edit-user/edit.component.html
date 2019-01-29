@@ -1,3 +1,27 @@
-<p>
-  edit works!
-</p>
+<div *ngIf="childUserList">
+  <h1>Hello {{childUserList.first_name}}</h1>
+  <p>It seems like you would like to edit your personal information.</p>
+  <p>Simply fill out the form below to get started!</p>
+  <div class="container editForm">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-body">
+          <input type="text" name="firstName" [(ngModel)]="childUserList.first_name" placeholder="New First Name" value="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <input type="text" name="lastName" [(ngModel)]="childUserList.last_name" placeholder="New Last Name" value="">
+        </div>
+      </div>
+    </div
+    <input type="text" name="companyName" [(ngModel)]="childUserList.company_name" placeholder="New Company Name" value="">
+    <input type="text" name="jobTitle" [(ngModel)]="childUserList.job_title" placeholder="New Job Title" value="">
+    <input type="text" name="email" [(ngModel)]="childUserList.email" placeholder="New Email" value="">
+    <input type="text" name="password" [(ngModel)]="childUserList.password" placeholder="Enter New Password" value="">
+    <input type="text" name="confirmPassword" [(ngModel)]="childUserList.confirm_pWord" placeholder="Confirm Password" value="">
+    <br>
+    <button  class="btn btn-primary" (click)="finishedEditing()">Finished Editing</button>
+  </div>
+
+</div>
