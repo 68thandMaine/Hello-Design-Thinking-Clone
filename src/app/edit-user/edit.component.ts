@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common'
 import { UserService } from '../user.service';
@@ -14,6 +14,7 @@ import * as $ from 'jquery';
 })
 
 export class EditComponent implements OnInit {
+  @Input() selectedUser;
   userId: string;
   userToDisplay;
 
@@ -28,6 +29,10 @@ export class EditComponent implements OnInit {
       this.userId = urlParameters['id'];
     });
     this.userToDisplay = this.userService.getUserById(this.userId);
+    
+    // beginUpdatingUser(userToUpdate) {
+    //   this.userService.updateInformation(userToUpdate);
+    // }
     $(document).ready(function(){
 
       $('editUserInformation').hide();

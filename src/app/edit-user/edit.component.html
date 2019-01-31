@@ -16,7 +16,7 @@
   </div>
   <div class="row">
     <div class="col-lg">
-    <button (click)="beginUpdatingUser(userToUpdate)" id="editUser" type="button" name="button">Click here to edit this information</button>
+    <button id="editUser" type="button" name="button">Click here to edit this information</button>
     </div>
   </div>
 </div>
@@ -45,5 +45,6 @@ Edit your information:
 
 </div>
 </div>
-<button (click)="beginUpdatingUser(userToUpdate)" type="button" name="button">Update my information</button>
+<button (click)="beginUpdatingUser(userToUpdate)" class="btn btn-primary" type="button" name="button">Update my information</button>
 </div>
+<button (click)="deleteThisUser" class="btn btn-danger" type="button" name="button">Delete me!</button>
