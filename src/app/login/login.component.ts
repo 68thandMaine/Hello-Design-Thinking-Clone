@@ -7,11 +7,6 @@ import { User } from '../models/user.model';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-@Input(): childSelectedUser: User;
-@Output(): clickedLogin: new EventEmitter;
 
-login(){
-  this.clickedLogin.emit();
-}
 
 }

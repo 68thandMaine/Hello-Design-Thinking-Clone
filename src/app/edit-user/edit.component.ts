@@ -7,11 +7,6 @@ import { User } from '../models/user.model';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent  {
-@Input()childSelectedUser: User;
-@Output() clickedDone = new EventEmitter;
 
-finishedEditing() {
-  this.clickedDone.emit();
-}
 
 }

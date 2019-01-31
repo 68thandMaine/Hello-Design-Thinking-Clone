@@ -5,6 +5,7 @@ import { BackgroundComponent } from './background/background.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { EditComponent } from './edit-user/edit.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { RegisterComponent } from './register/register.component';
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule
