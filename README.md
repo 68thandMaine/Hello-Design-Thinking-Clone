@@ -37,7 +37,7 @@ My plan is for the clone to look as similar as possible to the original, and to 
 Needless to say this is a work in progress and is being updated whenever possible.
 
 master
-
+createNewUser - This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available.
 
 1/31/19
 
