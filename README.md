@@ -29,10 +29,9 @@ Needless to say this is a work in progress and is being updated daily.
 Currently three branches:
 
 master
-oneUserPlan
-login
+createNewUser - This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available.
 
-1/28/19
+1/31/19
 
 ---
 
