@@ -9,5 +9,4 @@ import { User } from './models/user.model';
 export class AppComponent {
   title = 'Hello Design Thinking Clone';
 
-  masterUserList: User[] = [ ];
 }

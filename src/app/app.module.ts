@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
 import { userComponent } from './user/user.component';
-import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
@@ -14,7 +13,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     BackgroundComponent,
     userComponent,
-    LoginComponent,
     NavbarComponent
   ],
   imports: [
