@@ -15,7 +15,7 @@ getUsers() {
   return this.users
 }
 
-newUser(newUser: User) {
+addNewUser(newUser: User) {
   this.users.push(newUser);
 }
 
