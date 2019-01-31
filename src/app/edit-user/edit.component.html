@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <p>Hello {{(userToDisplay | async)?.first_name}}</p>
+    <p>Below you can see your information:</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <p>Frist Name: {{(userToDisplay | async)?.first_name}}</p>
+      <p>Last Name: {{(userToDisplay | async)?.last_name}}</p>
+      <p>Email: {{(userToDisplay | async)?.email}}</p>
+    </div>
+    <div class="col-lg-6">
+      <p>Company Name: {{(userToDisplay | async)?.company_name}}</p>
+      <p>Job Title: {{(userToDisplay | async)?.job_title}}</p>
+    </div>
+  </div>
+</div>
