@@ -7,6 +7,7 @@
 ## Table of Contents
 
 **[Description](#description)**<br>
+**[Current Features and Future Plans](#current-features-and future-plans)**<br>
 **[Installation Instructions](#installation-instructions)**<br>
 **[Application Specs](#application-specs)**<br>
 **[Known or Potential Errors](#known-or-potential-errors)**<br>
@@ -22,17 +23,23 @@ This project is an exercise using Angular 5 to recreate/clone a website that was
 I have chosen to clone [Hello Design Thinking / IDEO U](https://hellodesignthinking.ideou.com/#/).
 IDEO U is an online school where anyone can unlock their creative potential to solve problems.
 
-Currently the application is in shambles, but the pieces are comign together. There is a user class, and different functionalities that are not hooked up yet.
+---
+## Current Features and Future Plans
 
-Needless to say this is a work in progress and is being updated daily.
+Currently the application is in shambles, but the pieces are coming together. There is a user class, and different functionalities that are not hooked up yet.
 
-Currently three branches:
+My plan is for the clone to look as similar as possible to the original, and to have the ability to create a user object, persist it in Firebase, and for  user to be able to edit their information.
+
+1/31 - Create a new user and save to Firebase
+2/1 - Add authentication  and the ability for a user to edit their information
+2/2 - Continue to style the website
+
+Needless to say this is a work in progress and is being updated whenever possible.
 
 master
-oneUserPlan
-login
 
-1/28/19
+
+1/31/19
 
 ---
 
