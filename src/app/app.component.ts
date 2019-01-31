@@ -12,11 +12,15 @@ export class AppComponent {
  ngOnInit(){
 
   $(document).ready(function(){
-    $("#registerLoginForm").hide();
 
     $("#registerButton").click(function(){
-      $("#registerLoginForm").show();
+      $(".registerLoginForm").show();
+      $("#registration").show();
     })
+    $("#loginButton").click(function(){
+      $(".registerLoginForm").show();
+      $("#login").show();
+    // })
   })
 }
 }

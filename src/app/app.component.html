@@ -7,13 +7,17 @@
   <div class="user-functions">
       <!-- what do I pass into the click directive? -->
       <button id="registerButton" class="btn btn-light" type="button" name="button">Register</button>
-      <button class="btn btn-dark" type="button" name="button" (click)="loginButtonClicked()">Login</button>
+      <button id="loginButton" class="btn btn-dark" type="button" name="button" >Login</button>
+</div>
 </div>
 
-</div>
-<div id="registerLoginForm">
-  <app-register></app-register>
-  <!-- <app-login></app-login> -->
+<div class="registerLoginForm">
+  <div id="registration">
+    <app-register></app-register>
+  </div>
+  <div id="login">
+    <app-login></app-login>
+  </div>
 </div>
 
 <div class="container">

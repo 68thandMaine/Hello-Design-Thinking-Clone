@@ -25,6 +25,12 @@ clear: both;
 background-image: none;
 }
 
+.registerLoginForm{
+  display: none;
+}
+#registration, #login {
+  display: none;
+}
 
 
 
