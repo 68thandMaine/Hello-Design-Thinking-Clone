@@ -22,16 +22,21 @@ This project is an exercise using Angular 5 to recreate/clone a website that was
 I have chosen to clone [Hello Design Thinking / IDEO U](https://hellodesignthinking.ideou.com/#/).
 IDEO U is an online school where anyone can unlock their creative potential to solve problems.
 
-Currently the application is in shambles, but the pieces are comign together. There is a user class, and different functionalities that are not hooked up yet.
+Currently the application is in shambles, but the pieces are coming together. There is a user class, and different functionalities that are not hooked up yet.
 
 Needless to say this is a work in progress and is being updated daily.
 
-Currently three branches:
-
-master
-createNewUser - This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available.
-
 1/31/19
+Currently three branches:
+| Branch Name | Purpose/Features | Status | Date of Merge |
+|----|----|----|----|
+|master| This branch will contain code that is ready to be submitted | As of 1/31 this branch only displays buttons and a nav-bar. Not functional| N/A|
+|testBranch| This branch will be used to test if features work with each other before being merged with master| status| empty|N/A|
+|createNewUser|This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available| Ready for merge | N/A |
+|afterLogin| This branch contains a simple form that allows a user to change their information| Currently being worked on |N/A|
+
+
+
 
 ---
 
