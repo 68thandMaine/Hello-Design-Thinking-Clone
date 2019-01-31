@@ -22,6 +22,18 @@ This project is an exercise using Angular 5 to recreate/clone a website that was
 I have chosen to clone [Hello Design Thinking / IDEO U](https://hellodesignthinking.ideou.com/#/).
 IDEO U is an online school where anyone can unlock their creative potential to solve problems.
 
+Currently the application is in shambles, but the pieces are comign together. There is a user class, and different functionalities that are not hooked up yet.
+
+Needless to say this is a work in progress and is being updated daily.
+
+Currently three branches:
+
+master
+oneUserPlan
+login
+
+1/28/19
+
 ---
 
 ## Installation instructions
@@ -51,12 +63,12 @@ Testing has not been implemented as of 1/25/19
 ---
 ## Known or Potential Errors
 
-At this point there are no known or potential errors
+Currently this app is in development. If you are reading this - the app is not functional at all.
 
 ---
 ## Technologies Used
 
-  Find Help! was built using:
+  The Hello Design Thinking Clone was built using:
 - [Angular 5](https://angular.io/)
 - [Jasmine](https://jasmine.github.io/)
 - [Javascript - ES6](http://es6-features.org/#Constants)

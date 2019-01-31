@@ -2,7 +2,6 @@
 
 <div class="background">
   <app-background></app-background>
-</div>
 
 <div class="mainContainer">
   <div class="user-functions">
@@ -10,9 +9,14 @@
       <button class="btn btn-light" type="button" name="button" (click)="registerButtonClicked()">Register</button>
       <button class="btn btn-dark" type="button" name="button" (click)="loginButtonClicked()">Login</button>
 </div>
-  <app-user></app-user>
+  <app-register (sendNewUser)="addUser($event)"></app-register>
+  <app-login [childUserList]="currentUser" (clickedDone)="finishedEditing()"></app-login>
 </div>
+
+<app-edit-user></app-edit-user>
 
 <div class="container">
   <app-navbar></app-navbar>
+</div>
+
 </div>

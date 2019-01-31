@@ -1,0 +1,31 @@
+<div class="register_form">
+  <div class="login_spacers">
+    <h3>Get started with Hello Design Thinking!</h3>
+  </div>
+    <div class="login_spacers">
+      <h4>Already have an account?<a href="#" class="links">Log in here</a></h4>
+    </div>
+      <div class="form">
+        <form class="registration_form" action="index.html" method="">
+          <div class="row">
+            <div class="col-lg-6">
+              <input #firstName id="firstName" type="text" name="firstName" value="" placeholder="First Name*">
+            </div>
+            <div class="col-lg-6">
+              <input #lastName id="lastName" type="text" name="lastName" value="" placeholder="Last Name*">
+            </div>
+          </div>
+          <input #companyName id="companyName" type="text" name="companyName" value="" placeholder="Company Name*">
+          <input  #jobTitle id="jobTitle" type="text" name="jobTitle" value="" placeholder="Job Title*">
+          <input  #email id="email" type="email" name="email" value="" placeholder="Email*">
+          <input #password id="password" type="password" name="password" value="" placeholder="Password*">
+          <input #confirmPassword id="confirmPassword" type="password" name="confirmPassword" value="" placeholder="Confirm Password*">
+          <div>
+            <label #newsLetterOptIn for="newsLetterOptIn">
+              <input type="checkbox" name="newsLetterOptIn" value="">&nbsp; I'd like to recieve communications from IDEO U about offers, news and opportunities.
+            </label>
+              <input (click)="submitRegistration(firstName.value, lastName.value, companyName.value, jobTitle.value, email.value, password.value, confirmPassword.value, newsLetterOptIn.value)" class='btn btn-dark' type="submit" name="submit-registration" value="">
+            </div>
+        </form>
+      </div>
+</div>
