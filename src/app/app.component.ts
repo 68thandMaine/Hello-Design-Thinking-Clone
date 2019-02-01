@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { User } from './models/user.model';
+import { Component } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,18 @@ import { User } from './models/user.model';
 })
 export class AppComponent {
   title = 'Hello Design Thinking Clone';
-  masterUserList: User[] = [
-    new User("Chris", "Rudnicky", "Epicodus","Student", "chrisrudnicky@gmail.com", "password123", "password123"),
-    new User("Shaina", "Morales", "Pep Co","Screen Printer", "smo@pepco.com", "password123", "password123")
-   ];
+ ngOnInit(){
 
+  $(document).ready(function(){
+
+    $("#registerButton").click(function(){
+      $(".registerLoginForm").slideDown();
+      $("#registration").show();
+    })
+    $("#loginButton").click(function(){
+      $(".registerLoginForm").slideDown();
+      $("#login").show();
+    })
+  })
+}
 }

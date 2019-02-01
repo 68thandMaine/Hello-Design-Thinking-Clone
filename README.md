@@ -7,6 +7,7 @@
 ## Table of Contents
 
 **[Description](#description)**<br>
+**[Current Features and Future Plans](#current-features-and future-plans)**<br>
 **[Installation Instructions](#installation-instructions)**<br>
 **[Application Specs](#application-specs)**<br>
 **[Known or Potential Errors](#known-or-potential-errors)**<br>

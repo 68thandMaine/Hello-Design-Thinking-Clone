@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <p>Hello {{(userToDisplay | async)?.first_name}}</p>
+    <p>Below you can see your information:</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <p>Frist Name: {{(userToDisplay | async)?.first_name}}</p>
+      <p>Last Name: {{(userToDisplay | async)?.last_name}}</p>
+      <p>Email: {{(userToDisplay | async)?.email}}</p>
+    </div>
+    <div class="col-lg-6">
+      <p>Company Name: {{(userToDisplay | async)?.company_name}}</p>
+      <p>Job Title: {{(userToDisplay | async)?.job_title}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg">
+    <button id="editUser" type="button" name="button">Click here to edit this information</button>
+    </div>
+  </div>
+</div>
+
+<div id="editUserInformation" class="container">
+<div class="row">
+Edit your information:
+<div class="col-lg-4">
+  <label>Please enter your desired name: </label>
+  <hr>
+  <input [(ngModel)]="selectedUser.first_name" placeholder="First Name">
+  <input  [(ngModel)]="selectedUser.last_name" placeholder="Last Name">
+</div>
+<div class="col-lg-4">
+  <label>Please enter your new account information:</label>
+  <hr>
+  <input [(ngModel)]="sleectedUser.email" placeholder="Email">
+  <input [(ngModel)]="selectedUser.password" placeholder="Password">
+  <input [(ngModel)]="selectedUser.confirm_pWord" placeholder="Confirm Password">
+</div>
+<div class="col-lg-4">
+  <label>Please enter any new information about where you work:</label>
+  <hr>
+  <input [(ngModel)]="selectedUser.company_name" placeholder="Company Name">
+  <input [(ngModel)]="selectedUser.job_title" placeholder="Job Title">
+
+</div>
+</div>
+<button (click)="beginUpdatingUser(userToUpdate)" class="btn btn-primary" type="button" name="button">Update my information</button>
+</div>
+<button (click)="deleteThisUser" class="btn btn-danger" type="button" name="button">Delete me!</button>
