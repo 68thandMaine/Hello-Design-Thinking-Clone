@@ -25,7 +25,7 @@
           <input type="checkbox" name="newsLetterOptIn" value="">&nbsp; I'd like to recieve communications from IDEO U about offers, news and opportunities.
         </label>
         <button class="btn btn-dark" (click)="submitRegistration(firstName.value, lastName.value, companyName.value, jobTitle.value, email.value, password.value, confirmPassword.value, newsLetterOptIn.value); firstName.value=''; lastName.value=''; companyName.value=''; jobTitle.value=''; email.value=''; password.value=''; confirmPassword.value='' " class='btn btn-dark' type="submit" name="submit-registration"
-          value="">Submit</button>
+          routerLink="profile">Submit</button>
       </div>
     </form>
   </div>

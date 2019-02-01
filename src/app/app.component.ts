@@ -8,6 +8,7 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   title = 'Hello Design Thinking Clone';
+
  ngOnInit(){
 
   $(document).ready(function(){
