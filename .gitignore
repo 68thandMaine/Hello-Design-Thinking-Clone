@@ -36,7 +36,7 @@ testem.log
 HDThtml.html
 HDTcss.css
 HDTjQ.js
-api.keys.ts
+api-keys.ts
 
 # e2e
 /e2e/*.js
