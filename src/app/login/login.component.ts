@@ -13,15 +13,21 @@ import { Router } from '@angular/router';
 
 export class LoginComponent {
 user;
+private isLoggedIn: Boolean;
+private userName: String;
 
 constructor(private router: Router, public authService: AuthenticationService) {
   this.authService.user.subscribe(user =>  {
-    if(user) {
-
-
-    }
-  });
-}
+    if (user == null) {
+            this.isLoggedIn = false;
+          } else {
+            this.isLoggedIn = true;
+            this.userName = user.email;
+          console.log(this.userName);
+          console.log(user.providerData)
+          }
+        });
+      }
 
 login(email, password) {
   this.authService.login(email, password);
