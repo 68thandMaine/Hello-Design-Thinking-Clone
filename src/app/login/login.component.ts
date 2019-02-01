@@ -1,5 +1,6 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { User } from '../models/user.model';
+import { UserService } from '../user.service';
 import { AuthenticationService } from '../authentication.service';
 import { Router } from '@angular/router';
 
@@ -15,6 +16,7 @@ export class LoginComponent {
 user;
 private isLoggedIn: Boolean;
 private userName: String;
+private userEmail: String;
 
 constructor(private router: Router, public authService: AuthenticationService) {
   this.authService.user.subscribe(user =>  {
@@ -23,8 +25,10 @@ constructor(private router: Router, public authService: AuthenticationService) {
           } else {
             this.isLoggedIn = true;
             this.userName = user.email;
+            this.userEmail = user.uid;
           console.log(this.userName);
           console.log(user.providerData)
+          console.log(this.userEmail);
           }
         });
       }

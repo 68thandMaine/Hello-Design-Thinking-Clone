@@ -15,7 +15,7 @@ import * as $ from 'jquery';
 
 export class EditComponent implements OnInit {
   user;
-  userEmail: string;
+  userId: string;
   userToDisplay;
 
   constructor(
@@ -26,9 +26,9 @@ export class EditComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.userEmail = urlParameters['id'];
+      this.userId = urlParameters['id'];
     });
-    this.userToDisplay = this.userService.getUserByEmail(this.userEmail);
+    this.userToDisplay = this.userService.getUserById(this.userId);
 
     // beginUpdatingUser(userToUpdate) {
     //   this.userService.updateInformation(userToUpdate);
