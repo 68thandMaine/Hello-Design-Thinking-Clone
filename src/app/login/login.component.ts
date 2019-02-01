@@ -14,12 +14,13 @@ user;
 
 constructor(public authService: AuthenticationService) {
   this.authService.user.subscribe(user =>  {
-    
+
   });
 }
 
 login(email, password) {
   this.authService.login(email, password);
+  
 }
 
 logout() {

@@ -3,9 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { EditComponent } from './edit-user/edit.component';
 
+
+
 const appRoutes: Routes = [
   {
-    path: 'profile',
+    path: 'profile/:id',
     component: EditComponent
   }
 ];

@@ -14,7 +14,7 @@
       <input #email class="loginFormInput" type="email" name="login_email" value="" placeholder="Email" id="login_email">
       <input #password class="login_form" type="text" name="loginFormPword" value="" placeholder="Password" id="loginFormPword">
       <p id="forgotPWord"><a href="#" id="forgotPWord">Forgot password?</a></p>
-      <button (click)="login(email.value, password.value); email.value=''; password.value=''; " class="btn btn-dark" id="login_button" type="button" name="login_button" routerLink="profile">Login</button>
+      <button (click)="login(email.value, password.value); email.value=''; password.value=''; " class="btn btn-dark" id="login_button" type="button" name="login_button">Login</button>
     </form>
   </div>
   <div>
