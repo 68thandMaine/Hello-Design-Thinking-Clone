@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { User } from '../models/user.model';
 import { AuthenticationService } from '../authentication.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -12,15 +14,18 @@ import { AuthenticationService } from '../authentication.service';
 export class LoginComponent {
 user;
 
-constructor(public authService: AuthenticationService) {
+constructor(private router: Router, public authService: AuthenticationService) {
   this.authService.user.subscribe(user =>  {
+    if(user) {
 
+
+    }
   });
 }
 
 login(email, password) {
   this.authService.login(email, password);
-  
+  // this.router.navigate(['profile', email.$key])
 }
 
 logout() {
