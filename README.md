@@ -33,8 +33,8 @@ My plan is for the clone to look as similar as possible to the original, and to 
 2/1 - Add authentication  and the ability for a user to edit their information
 2/2 - Continue to style the website/add new user validation
 
-1/31/19
-Currently four branches:
+2/1/19
+Currently five branches:
 
 | Branch Name | Purpose/Features | Status | Date of Merge |
 |----|----|----|----|
@@ -42,6 +42,7 @@ Currently four branches:
 |testBranch| This branch will be used to test if features work with each other before being merged with master| status| empty|N/A|
 |createNewUser|This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available| Merged into testBranch. Can create objects in Firebase | 1.31.19 |
 |afterLogin| This branch contains a simple form that allows a user to change their information| Currently being worked on |N/A|
+|login| This branch contains the code for testing if I can successfully see a user's credentials after they log in with an email and password| Currently being worked on - Getting an error saying cannot read property of subscribe| N/A |
 
 
 

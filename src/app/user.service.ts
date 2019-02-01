@@ -19,17 +19,17 @@ addNewUser(newUser: User) {
   this.users.push(newUser);
 }
 
-getUserById(userId: string){
-  return this.database.object('users/' + userId)
+getUserByEmail(email: string){
+  return this.database.object('users/' + email)
 }
 
 updateInformation(localUpdatedUserInfo) {
-  let userEntryInFirebase = this.getUserById(localUpdatedUserInfo.$key);
+  let userEntryInFirebase = this.getUserByEmail(localUpdatedUserInfo.$key);
   userEntryInFirebase.update({frist_name: localUpdatedUserInfo.first_name, last_name: localUpdatedUserInfo.last_name, company_name: localUpdatedUserInfo.company_name, job_title: localUpdatedUserInfo.job_title, email: localUpdatedUserInfo.email, password: localUpdatedUserInfo.pasword, confirm_pWord: localUpdatedUserInfo.confirm_pWord})
 }
 
 deleteUser(localUserToDelete) {
-  let userEntryInFirebase = this.getUserById(localUserToDelete.$key);
+  let userEntryInFirebase = this.getUserByEmail(localUserToDelete.$key);
   userEntryInFirebase.remove();
 }
 
