@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 import { BackgroundComponent } from './background/background.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -34,10 +36,12 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-FormsModule,
-HttpModule,
-AngularFireModule.initializeApp(firebaseConfig),
-AngularFireDatabaseModule
+    FormsModule,
+    HttpModule,
+    // routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
