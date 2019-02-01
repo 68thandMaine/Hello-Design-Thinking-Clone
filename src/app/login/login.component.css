@@ -1,4 +1,4 @@
-h1 h2 h3 h4 h5 h6 {
+/* h1 h2 h3 h4 h5 h6 {
   font-family: 'Sentinel book', Georgia, sans-serif;
 }
 
@@ -9,7 +9,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 /* Used to provide width betwewn divs */
 .login_spacers {
-  margin-bottom:30px;
+ /* margin-bottom:30px; */
 }
 .links {
   color: red;
@@ -20,7 +20,7 @@ h1 h2 h3 h4 h5 h6 {
 
 /*  Login Form */
 .login_form {
-  position: absolute;
+  /* position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -29,11 +29,11 @@ h1 h2 h3 h4 h5 h6 {
   height: auto;
   max-width: 100%;
   margin:  100px;
-  padding: 40px;
+  padding: 40px; */
   }
 
 .loginFormInput {
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 #forgotPWord {
   color: red;
@@ -42,6 +42,4 @@ h1 h2 h3 h4 h5 h6 {
   font-weight: bold;
 }
 
-.legalities {
-
-}
+/* .legalities { */

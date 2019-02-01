@@ -14,7 +14,7 @@ user;
 
 constructor(public authService: AuthenticationService) {
   this.authService.user.subscribe(user =>  {
-    console.log(user);
+    
   });
 }
 
