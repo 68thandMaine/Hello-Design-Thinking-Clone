@@ -25,6 +25,13 @@ clear: both;
 background-image: none;
 }
 
+.registerLoginForm{
+  display: none;
+}
+#registration, #login {
+  display: none;
+}
+
 .subHeader {
 margin-bottom: 10px;
 font-family: Gotham-Bold, Tahoma, sans-serif;
