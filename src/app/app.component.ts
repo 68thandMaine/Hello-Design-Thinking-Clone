@@ -14,13 +14,13 @@ export class AppComponent {
   $(document).ready(function(){
 
     $("#registerButton").click(function(){
-      $(".registerLoginForm").show();
+      $(".registerLoginForm").slideDown();
       $("#registration").show();
     })
     $("#loginButton").click(function(){
-      $(".registerLoginForm").show();
+      $(".registerLoginForm").slideDown();
       $("#login").show();
-    // })
+    })
   })
 }
 }
