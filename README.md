@@ -26,15 +26,17 @@ Currently the application is in shambles, but the pieces are coming together. Th
 
 Needless to say this is a work in progress and is being updated daily.
 
-1/31/19  
-Currently three branches:
+
+
+1/31/19
+Currently four branches:
 
 | Branch Name | Purpose/Features | Status | Date of Merge |
 |----|----|----|----|
-| master | This branch will contain code that is ready to be submitted | As of 1/31 this branch only displays buttons and a nav-bar. Not functional | N/A |
-| testBranch | This branch will be used to test if features work with each other before being merged with master | empty | N/A |
-| createNewUser | This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available | Ready for merge | Merged into testBranch 1/31 |
-| afterLogin | This branch contains a simple form that allows a user to change their information | Currently being worked on | N/A |
+|master| This branch will contain code that is ready to be submitted | As of 1/31 this branch only displays buttons and a nav-bar. Not functional| N/A|
+|testBranch| This branch will be used to test if features work with each other before being merged with master| status| empty|N/A|
+|createNewUser|This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available| Ready for merge | Merged into testBranch. Can create objects in Firebase |
+|afterLogin| This branch contains a simple form that allows a user to change their information| Currently being worked on |N/A|
 
 
 
