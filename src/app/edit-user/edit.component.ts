@@ -14,8 +14,7 @@ import * as $ from 'jquery';
 })
 
 export class EditComponent implements OnInit {
-  @Input() currentUser;
-  user: FirebaseObjectObservable<any[]>;
+  user;
   userEmail: string;
   userToDisplay;
 
