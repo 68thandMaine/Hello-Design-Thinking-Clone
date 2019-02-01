@@ -42,7 +42,7 @@ Currently five branches:
 |testBranch| This branch will be used to test if features work with each other before being merged with master| status| empty|N/A|
 |createNewUser|This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available| Merged into testBranch. Can create objects in Firebase | 1.31.19 |
 |afterLogin| This branch contains a simple form that allows a user to change their information| Currently being worked on |N/A|
-|login| This branch contains the code for testing if I can successfully see a user's credentials after they log in with an email and password| Currently being worked on - Getting an error saying cannot read property of subscribe| N/A |
+|login| This branch contains the code for testing if I can successfully see a user's credentials after they log in with an email and password| Can see a user data returned from console.log() inside login. Need to add code to show certain things if logged in | Merged into testBranch 2.1.19 |
 
 
 
