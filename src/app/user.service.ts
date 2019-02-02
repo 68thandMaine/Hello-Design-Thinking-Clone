@@ -10,7 +10,7 @@ userEmail: string;
 
 constructor(private database: AngularFireDatabase, private afAuth: AngularFireAuth) {
 this.afAuth.authState.subscribe(user => {
-  if(user) this.userEmail =user.uid
+  if(ucdser) this.userEmail =user.uid
 })
  }
 

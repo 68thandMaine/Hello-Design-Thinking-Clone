@@ -14,21 +14,16 @@ import * as $ from 'jquery';
 })
 
 export class EditComponent implements OnInit {
-  user;
-  userId: string;
-  userToDisplay;
+@Input() loggedInUser;
 
   constructor(
-    private route: ActivatedRoute,
-    private location: Location,
     private userService: UserService
   ) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.userId = urlParameters['id'];
-    });
-    this.userToDisplay = this.userService.getUserById(this.userId);
+
+  };
+
 
     // beginUpdatingUser(userToUpdate) {
     //   this.userService.updateInformation(userToUpdate);

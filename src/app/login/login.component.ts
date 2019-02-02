@@ -9,13 +9,12 @@ import { Router } from '@angular/router';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [AuthenticationService]
+  providers: [AuthenticationService, UserService]
 })
 
 export class LoginComponent {
 user;
 private isLoggedIn: Boolean;
-private userName: String;
 private userEmail: String;
 
 constructor(private router: Router, public authService: AuthenticationService) {
@@ -24,11 +23,8 @@ constructor(private router: Router, public authService: AuthenticationService) {
             this.isLoggedIn = false;
           } else {
             this.isLoggedIn = true;
-            this.userName = user.email;
-            this.userEmail = user.uid;
-          console.log(this.userName);
-          console.log(user.providerData)
-          console.log(this.userEmail);
+            this.userEmail = user.email;
+          console.log("This is the return of the user email from authentication: " + this.userEmail);
           }
         });
       }
