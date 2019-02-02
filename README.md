@@ -30,9 +30,10 @@ Currently the application is in shambles, but the pieces are coming together. Th
 
 My plan is for the clone to look as similar as possible to the original, and to have the ability to create a user object, persist it in Firebase, and for  user to be able to edit their information.
 
-1/31 - Create a new user and save to Firebase
-2/1 - Add authentication  and the ability for a user to edit their information
-2/2 - Continue to style the website/add new user validation
+- 1/31 - Create a new user and save to Firebase [ Goal Met ]
+- 2/1 - Add authentication  and the ability for a user to edit their information [ added authentication ]
+- 2/2 - Add the ability for a user to edit their information / styling
+
 
 2/1/19
 Currently five branches:
@@ -40,9 +41,9 @@ Currently five branches:
 | Branch Name | Purpose/Features | Status | Date of Merge |
 |----|----|----|----|
 |master| This branch will contain code that is ready to be submitted | As of 1/31 this branch only displays buttons and a nav-bar. Not functional| N/A|
-|testBranch| This branch will be used to test if features work with each other before being merged with master| status| empty|N/A|
+|testBranch| This branch will be used to test if features work with each other before being merged with master| Currently the test branch has the capability to register new users and to add authentication. | Merged to master 2.1.19 |
 |createNewUser|This branch contains the form for creating a new user. I have hooked up the inputs to a method that persists data to Firebase. Will merge with master once the user view is available| Merged into testBranch. Can create objects in Firebase | 1.31.19 |
-|afterLogin| This branch contains a simple form that allows a user to change their information| Currently being worked on |N/A|
+|afterLogin| This branch contains a simple form that allows a user to change their information| Dabbling around with trying to match the email from the auth to the email stored in the firebase db |N/A|
 |login| This branch contains the code for testing if I can successfully see a user's credentials after they log in with an email and password| Can see a user data returned from console.log() inside login. Need to add code to show certain things if logged in | Merged into testBranch 2.1.19 |
 
 
